@@ -1,0 +1,186 @@
+.g-feed-wrapper{
+    max-width: 784px;
+    padding: 0 20px;
+    position: relative;
+    min-height: 1px;
+    margin: auto ;
+}
+
+.g-block{
+ padding: 22px;
+ background: $colorPrimary;  
+ margin-bottom: 30px;
+ box-shadow: inset 2px 2px 1px #FFFFFF, inset -2px -2px 1px #FFFFFF;
+ @include respond-below(md){
+     padding: 20px;
+ }
+}
+
+.g-feed-tab{
+    display: flex;
+    justify-content: space-between;
+    @include respond-below(md){}
+}
+
+.g-feed-tab-grp{
+    .btn{
+        min-width: 140px;
+        @include respond-below(md){
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+        }
+    }
+    @include respond-below(md){
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.g-feed-options{
+    .btn{
+        text-indent: -9999px;
+        padding: 0;
+        width: 35px;
+        background: url(../img/dots.svg) no-repeat center;
+    }
+}
+
+.g-tweet{
+    overflow: hidden;
+    overflow-x: auto;
+    @include respond-below(md){
+        padding: 20px;
+        padding-right: 0;
+    }
+}
+
+
+ul.g-tw-row{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-left: 50px;
+    @include respond-below(md){
+        padding-left: 0px;
+    }
+    li{
+        position: relative;
+        
+        li{
+            .g-tw-col{
+                &::before{
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    background: #fff;
+                    top: 23px;
+                    left: -42px;
+                    width: 70px;
+                }
+            }
+            .g-tw-avatar{
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 12px;
+                    height: 12px;
+                    background: $colorSecondary;
+                    left: -47px;
+                    top: 18px;
+                    border-radius: 50%;
+                    z-index: 5;
+                }
+            }
+        }        
+    }
+    > li{
+        &:last-child{
+            > .g-tw-col{
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 2px;
+                    background: #fff;
+                    top: 20px;
+                    bottom: -23px;
+                    left: 23px;
+                }
+            }
+        }
+        &.empty{
+            > .g-tw-col{
+                &::after{
+                    bottom: auto;
+                }
+            }
+            // &::before{
+            //     display: none;
+            // }
+        }
+        &.has-pref{
+            > .g-tw-col{
+                &:after{
+                    content: "";
+                    position: absolute;
+                    width: 2px;
+                    background: #fff;
+                    top: 20px;
+                    bottom: -23px;
+                    left: -42px;
+                }
+            }
+        }
+    }
+    ul{
+        padding-left: 65px;
+    }
+}
+
+.g-tw-col{
+    display: flex;
+    padding-bottom: 50px;
+    position: relative;
+
+    figure{
+        margin: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.g-tw-avatar{
+    width: 50px;
+    position: relative;
+}
+
+.g-tw-content{
+    flex: 1;
+    padding-left: 12px;
+    font-size: 20px;
+    padding-right: 100px;
+    @include respond-below(md){
+        padding-right: 20px;
+    }
+    p{
+        margin: 0;
+    }
+    img{
+        margin-top: 10px;
+    }
+}
+
+.g-tw-uname{
+    a{
+        color: #fff;
+    }
+}
+
+.g-tw-tweet{
+    padding-top: 3px;
+}
