@@ -500,6 +500,11 @@ body {
 }
 
 /* line 6, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+.g-content {
+  min-height: 85vh;
+}
+
+/* line 10, ../../../../wamp64/www/galore/scss/layout/_common.scss */
 .g-wrapper {
   max-width: 1193px;
   padding: 0 20px;
@@ -508,7 +513,7 @@ body {
   min-height: 1px;
 }
 
-/* line 14, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+/* line 18, ../../../../wamp64/www/galore/scss/layout/_common.scss */
 .g-banner {
   height: 173px;
   padding: 20px;
@@ -519,13 +524,13 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* line 14, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+  /* line 18, ../../../../wamp64/www/galore/scss/layout/_common.scss */
   .g-banner {
     height: 130px;
   }
 }
 
-/* line 24, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+/* line 28, ../../../../wamp64/www/galore/scss/layout/_common.scss */
 .g-banner .h1 {
   color: #E6EBF2;
   font-size: 54px;
@@ -534,7 +539,7 @@ body {
 }
 
 @media (max-width: 767px) {
-  /* line 24, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+  /* line 28, ../../../../wamp64/www/galore/scss/layout/_common.scss */
   .g-banner .h1 {
     line-height: 1.2;
     font-size: 40px;
@@ -542,34 +547,34 @@ body {
 }
 
 @media (max-width: 359px) {
-  /* line 24, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+  /* line 28, ../../../../wamp64/www/galore/scss/layout/_common.scss */
   .g-banner .h1 {
     font-size: 32px;
   }
 }
 
-/* line 36, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+/* line 40, ../../../../wamp64/www/galore/scss/layout/_common.scss */
 .g-banner .h1 span {
   display: block;
 }
 
-/* line 42, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+/* line 46, ../../../../wamp64/www/galore/scss/layout/_common.scss */
 .g-container {
   padding-top: 44px;
   padding-bottom: 57px;
 }
 
-/* line 47, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+/* line 51, ../../../../wamp64/www/galore/scss/layout/_common.scss */
 .t-center {
   text-align: center;
 }
 
-/* line 51, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+/* line 55, ../../../../wamp64/www/galore/scss/layout/_common.scss */
 .btn {
   display: inline-block;
 }
 
-/* line 55, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+/* line 59, ../../../../wamp64/www/galore/scss/layout/_common.scss */
 .btn-yellow {
   display: inline-block;
   background: #FFD600;
@@ -589,7 +594,7 @@ body {
   color: #000;
 }
 
-/* line 70, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+/* line 74, ../../../../wamp64/www/galore/scss/layout/_common.scss */
 .btn-yellow::before {
   content: "";
   position: absolute;
@@ -599,7 +604,7 @@ body {
   left: -17px;
 }
 
-/* line 78, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+/* line 82, ../../../../wamp64/www/galore/scss/layout/_common.scss */
 .btn-yellow::after {
   content: "";
   position: absolute;
@@ -610,7 +615,7 @@ body {
   transform: rotate(180deg);
 }
 
-/* line 89, ../../../../wamp64/www/galore/scss/layout/_common.scss */
+/* line 93, ../../../../wamp64/www/galore/scss/layout/_common.scss */
 .btn-black {
   box-shadow: inset 2px 2px 1px rgba(255, 255, 255, 0.8), inset -2px -2px 1px rgba(0, 0, 0, 0.8);
   border-radius: 1px;
@@ -791,6 +796,12 @@ body {
   }
 }
 
+/* line 35, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+.g-feed-tab-grp .btn-black.active {
+  background: #00D380;
+  color: #0D0D0D;
+}
+
 @media (max-width: 767px) {
   /* line 25, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
   .g-feed-tab-grp {
@@ -799,7 +810,7 @@ body {
   }
 }
 
-/* line 42, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 48, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 .g-feed-options .btn {
   text-indent: -9999px;
   padding: 0;
@@ -807,21 +818,37 @@ body {
   background: url(../img/dots.svg) no-repeat center;
 }
 
-/* line 50, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 56, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+.g-tab-wrap {
+  display: none;
+}
+
+/* line 58, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+.g-tab-wrap.show {
+  display: block;
+}
+
+/* line 63, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+.coming-soon {
+  font-size: 32px;
+  text-align: center;
+}
+
+/* line 68, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 .g-tweet {
   overflow: hidden;
   overflow-x: auto;
 }
 
 @media (max-width: 767px) {
-  /* line 50, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+  /* line 68, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
   .g-tweet {
     padding: 20px;
     padding-right: 0;
   }
 }
 
-/* line 60, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 78, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 ul.g-tw-row {
   padding: 0;
   margin: 0;
@@ -830,18 +857,18 @@ ul.g-tw-row {
 }
 
 @media (max-width: 767px) {
-  /* line 60, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+  /* line 78, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
   ul.g-tw-row {
     padding-left: 0px;
   }
 }
 
-/* line 68, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 86, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 ul.g-tw-row li {
   position: relative;
 }
 
-/* line 73, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 91, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 ul.g-tw-row li li .g-tw-col::before {
   content: "";
   position: absolute;
@@ -852,7 +879,7 @@ ul.g-tw-row li li .g-tw-col::before {
   width: 70px;
 }
 
-/* line 84, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 102, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 ul.g-tw-row li li .g-tw-avatar::after {
   content: "";
   position: absolute;
@@ -865,7 +892,7 @@ ul.g-tw-row li li .g-tw-avatar::after {
   z-index: 5;
 }
 
-/* line 101, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 119, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 ul.g-tw-row > li:last-child > .g-tw-col::after {
   content: "";
   position: absolute;
@@ -876,12 +903,12 @@ ul.g-tw-row > li:last-child > .g-tw-col::after {
   left: 23px;
 }
 
-/* line 114, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 132, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 ul.g-tw-row > li.empty > .g-tw-col::after {
   bottom: auto;
 }
 
-/* line 124, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 142, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 ul.g-tw-row > li.has-pref > .g-tw-col:after {
   content: "";
   position: absolute;
@@ -892,19 +919,19 @@ ul.g-tw-row > li.has-pref > .g-tw-col:after {
   left: -42px;
 }
 
-/* line 136, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 154, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 ul.g-tw-row ul {
   padding-left: 65px;
 }
 
-/* line 141, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 159, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 .g-tw-col {
   display: flex;
   padding-bottom: 50px;
   position: relative;
 }
 
-/* line 146, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 164, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 .g-tw-col figure {
   margin: 0;
   width: 50px;
@@ -915,13 +942,13 @@ ul.g-tw-row ul {
   z-index: 1;
 }
 
-/* line 157, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 175, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 .g-tw-avatar {
   width: 50px;
   position: relative;
 }
 
-/* line 162, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 180, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 .g-tw-content {
   flex: 1;
   padding-left: 12px;
@@ -930,28 +957,28 @@ ul.g-tw-row ul {
 }
 
 @media (max-width: 767px) {
-  /* line 162, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+  /* line 180, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
   .g-tw-content {
     padding-right: 20px;
   }
 }
 
-/* line 170, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 188, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 .g-tw-content p {
   margin: 0;
 }
 
-/* line 173, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 191, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 .g-tw-content img {
   margin-top: 10px;
 }
 
-/* line 179, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 197, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 .g-tw-uname a {
   color: #fff;
 }
 
-/* line 184, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
+/* line 202, ../../../../wamp64/www/galore/scss/pages/_feed.scss */
 .g-tw-tweet {
   padding-top: 3px;
 }

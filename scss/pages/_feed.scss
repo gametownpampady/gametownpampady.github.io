@@ -31,6 +31,12 @@
             }
         }
     }
+    .btn-black{
+        &.active{
+            background: $colorSecondary;
+            color: $colorPrimary;
+        }
+    }
     @include respond-below(md){
         display: flex;
         flex-direction: column;
@@ -45,6 +51,18 @@
         width: 35px;
         background: url(../img/dots.svg) no-repeat center;
     }
+}
+
+.g-tab-wrap{
+    display: none;
+    &.show{
+        display: block;
+    }
+}
+
+.coming-soon{
+    font-size: 32px;
+    text-align: center;
 }
 
 .g-tweet{
